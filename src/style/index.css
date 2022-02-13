@@ -52,6 +52,7 @@ body{
 	gap: 1rem;
 	width: 900px;
 	height: 400px;
+	position: relative;
 }
 @media screen and (max-width: 1000px) {
 	.app{
@@ -83,6 +84,15 @@ body{
 	.app{
 		width: 90vw;
 	}
+}
+
+.splitter{
+	font-weight: 700;
+	position: absolute;
+	top: -100px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	color: var(--Dark-grayish-cyan);
 }
 .action,
 .result{

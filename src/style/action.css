@@ -35,6 +35,9 @@
 	background-color: var(--Strong-cyan);
 	color: var(--Very-dark-cyan);
 }
+.tip-btn:focus{
+	background-color: var(--Strong-cyan);
+}
 
 .error-msg{
 	color: orange;

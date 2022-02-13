@@ -5,6 +5,7 @@ import Action from './components/Action';
 function App() {
   return (
     <div className="app">
+      <p className='splitter'>spli<br />tter</p>
       <Action/>
       <Result/>  
     </div>

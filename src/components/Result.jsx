@@ -7,18 +7,15 @@ import { useGlobalContext } from '../Context'
 const Result = () => {
 	const {bill, tip, nbrOfPeople,
 		setTip, setBill,setNbrOfPeople, custom,setCustom} = useGlobalContext()
-	console.log('tip:',tip);
-	console.log('bill:',bill);
-	console.log('nbr:',nbrOfPeople);
-	console.log('custom:',custom);
 	let tipAmount = 0;
 	let total = 0;
-	
 	if ((tip || custom) && bill && nbrOfPeople)
 	{
 		let tipValue;
 		if (tip === '' ? tipValue = custom : tipValue = tip)
-			console.log('tipValue:', tipValue);
+		if (tip != '' && custom != '')
+			tipValue = custom
+		console.log('tipValue:', tipValue);
 		tipAmount = ((bill * tipValue ) / 100) / nbrOfPeople
 		total = bill / nbrOfPeople + tipAmount
 		

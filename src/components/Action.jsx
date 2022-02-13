@@ -4,7 +4,12 @@ import data from '../data'
 
 const Action = () => {
   const {setTip, setBill,setNbrOfPeople, bill, tip, nbrOfPeople, custom, setCustom} = useGlobalContext();
-  console.log(nbrOfPeople);
+
+  const  handleTip = (value) => {
+    if (custom != '')
+      setCustom('')
+    setTip(value)
+  }
   return (
 	<div className='action'>
     <label htmlFor="" >
@@ -21,7 +26,7 @@ const Action = () => {
             <button 
               className='btn tip-btn' 
               key={id}
-              onClick={() => setTip(value)}
+              onClick={() => handleTip(value)}
               >
               {value}%
               </button>
