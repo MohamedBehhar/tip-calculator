@@ -1,0 +1,55 @@
+.action{
+	min-width: 50%;
+	padding: 1rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.tip-grid{
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(110px, 1fr));
+	gap: .5rem;
+	margin-bottom: 2rem;
+}
+@media screen and (max-width: 950px) {
+	.tip-grid{
+		grid-template-columns: repeat( auto-fit, minmax(80px, 1fr));
+	}
+}
+@media screen and (max-width: 850px) {
+	.tip-grid{
+		grid-template-columns: repeat( auto-fit, minmax(100px, 1fr));
+	}
+}
+
+.tip-btn{
+	background-color: var(--Very-dark-cyan);
+	color: white;
+	font-weight: 700;
+	transition: background-color ease-in-out 200ms, color ease-in-out 200ms;
+}
+
+.tip-btn:hover{
+	background-color: var(--Strong-cyan);
+	color: var(--Very-dark-cyan);
+}
+
+.error-msg{
+	color: orange;
+	position: absolute;
+	right: 20px;
+	bottom: 55px;
+	font-size: 12px;
+	display: none;
+}
+
+.show-msg{
+	display: block;
+}
+
+.input-text{
+	color: var(--Dark-grayish-cyan);
+	
+}

@@ -1,0 +1,91 @@
+@import "./result.css";
+@import "./action.css";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Space Mono', monospace;
+}
+
+:root{
+--Strong-cyan: hsl(172, 67%, 45%);
+--Very-dark-cyan: hsl(183, 100%, 15%);
+--Dark-grayish-cyan: hsl(186, 14%, 43%);
+--Light-grayish-cyan: hsl(185, 41%, 84%);
+--White: hsl(0, 0%, 100%);
+--bottom-space: 1.5rem;
+}
+.btn{
+	border: none;
+	border-radius: 5px;
+	padding: .5rem;
+	cursor: pointer;
+}
+input {
+	border: none;
+	padding: .5rem;
+	background-color: whitesmoke;
+	border-radius: 8px;
+	width: 100%;
+}
+input:focus{
+	outline: 2px solid hsl(172, 67%, 45%);
+	/* border:hsl(172, 67%, 45%); */
+}
+
+body{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color:var(--Light-grayish-cyan);
+}
+
+.app{
+	background-color: white;
+	padding: 2rem;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	width: 900px;
+	height: 400px;
+}
+@media screen and (max-width: 1000px) {
+	.app{
+		width: 80vw;
+	}
+}
+@media screen and (max-width: 800px) {
+	.app{
+		width: 90vw;
+	}
+}
+@media screen and (max-width: 700px) {
+	.app{
+		display: flex;
+		flex-direction: column;
+		height: 80%;
+		width: 60vw;
+		gap: 2rem;
+	}
+	.action,
+	.result{
+		width: 100%;
+	}
+	.action{
+		padding: 0;
+	}
+}
+@media screen and (max-width: 500px) {
+	.app{
+		width: 90vw;
+	}
+}
+.action,
+.result{
+	height: 100%;
+}
+
