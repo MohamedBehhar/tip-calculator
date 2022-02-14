@@ -20,8 +20,10 @@ Click on the link below to test the live version, if you have a remark or a sugg
 
 ## Screenshot
 - Desktop
+![Desktop](./screenShots/desktop.png)
 
 - Mobile
+![Mobile](./screenShots/mobile.png)
 
 
 ## Built with
