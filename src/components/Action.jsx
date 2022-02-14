@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React  from 'react'
 import { useGlobalContext } from '../Context'
 import data from '../data'
 
 const Action = () => {
-  const {setTip, setBill,setNbrOfPeople, bill, tip, nbrOfPeople, custom, setCustom} = useGlobalContext();
+  const {setTip, setBill,setNbrOfPeople, bill, nbrOfPeople, custom, setCustom} = useGlobalContext();
 
   const  handleTip = (value) => {
-    if (custom != '')
+    if (custom !== '')
       setCustom('')
     setTip(value)
   }

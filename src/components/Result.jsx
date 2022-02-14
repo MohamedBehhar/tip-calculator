@@ -1,5 +1,4 @@
 import React from 'react'
-import { useEffect } from 'react/cjs/react.development';
 import { useGlobalContext } from '../Context'
 
 
@@ -13,7 +12,7 @@ const Result = () => {
 	{
 		let tipValue;
 		if (tip === '' ? tipValue = custom : tipValue = tip)
-		if (tip != '' && custom != '')
+		if (tip !== '' && custom !== '')
 			tipValue = custom
 		console.log('tipValue:', tipValue);
 		tipAmount = ((bill * tipValue ) / 100) / nbrOfPeople
